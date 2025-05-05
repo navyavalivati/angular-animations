@@ -27,8 +27,17 @@ import { trigger, state, style, transition, animate} from '@angular/animations';
         opacity: 1
       })
     ),
-    transition('* => *', animate('500ms ease-in-out'))
+    //transition('* => *', animate('500ms ease-in-out'))
 
+
+    //custom transitions
+
+    transition('default => active', animate('1000ms ease-in')),
+    transition('active => success', animate('600ms ease-out')),
+    transition('success => default', animate('300ms ease-in')),
+
+    //fallback transition
+    transition('* => *', animate('500ms ease-in-out'))
     ])
   ]
 })
