@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="status-box" [@statusChange]="currentState" (click)="setState('active')">
+    {{currentState}}
+  </div>
+
+  <div class="buttons">
+    <button (click)="setState('active')">Activate</button>
+    <button (click)="setState('success')">Success</button>
+    <button (click)="setState('default')">Reset</button>
+  </div>
+</div>
