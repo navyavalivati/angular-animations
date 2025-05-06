@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { trigger, state, style, transition, animate} from '@angular/animations';
+import { FadeAnimationComponent } from './fade-animation/fade-animation.component';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [FadeAnimationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   animations: [
