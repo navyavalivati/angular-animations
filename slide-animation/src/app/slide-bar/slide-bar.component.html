@@ -1,0 +1,8 @@
+<button (click)="toggleMenu()">{{ isMenuOpen ? 'Close': 'Open'}} Menu</button>
+<div *ngIf="isMenuOpen" class="menu" @slideMenu>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</div> 
